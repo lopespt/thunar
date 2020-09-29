@@ -16,6 +16,10 @@ jobs:
     runs-on:  linux
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: clone
+        run: |
+          git clone https://github.com/lopespt/thunar/
+          cd thunar
       - name: Merge Upstream
         uses: exions/merge-upstream@v1
         with:
