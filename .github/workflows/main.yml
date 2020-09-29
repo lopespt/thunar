@@ -19,7 +19,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Get from Original Repository
-        run: git pull base master
+        run: git pull  https://github.com/xfce-mirror/thunar
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
