@@ -9,12 +9,11 @@ on:
     - cron: '* * * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs:   
   # This workflow contains a single job called "build"
-  build:
+  merge:
     # The type of runner that the job will run on
     runs-on:  linux
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Pull Repository
@@ -22,6 +21,8 @@ jobs:
           git clone https://github.com/lopespt/thunar
           cd thunar
           git pull  https://github.com/xfce-mirror/thunar
+          git commit -am "Automatic Merge"
+          
       
 
 
